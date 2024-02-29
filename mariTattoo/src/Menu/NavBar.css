@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+#gr1.MuiGrid-root {
+    background-color:  #484f4faa;
+    height: "40px";
+    position: "relative"
+}
+
+.MenuLink.MuiLink-root {
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
