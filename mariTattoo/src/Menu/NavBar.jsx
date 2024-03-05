@@ -1,12 +1,7 @@
 import { ListItem } from "@mui/material"
 import {Paper, CustomLink, GridContainer} from "/src/Menu/NavBar.style.js"
-//import "/src/Menu/NavBar.css"
-
-
 
 export const NavBar = () => {
-
-    //const itemsMenu = ["SOBRE", "ORÇAMENTO", "AGENDA"];
 
     const itemsMenu = [
         {
