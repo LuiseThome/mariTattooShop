@@ -1,5 +1,6 @@
-import { Grid, Link, ListItem } from "@mui/material"
-import "/src/Menu/NavBar.css"
+import { ListItem } from "@mui/material"
+import {Paper, CustomLink, GridContainer} from "/src/Menu/NavBar.style.js"
+//import "/src/Menu/NavBar.css"
 
 
 
@@ -23,42 +24,29 @@ export const NavBar = () => {
     ]
 
     return (
-        <Grid
-        id="gr1"
-         >
-        <Grid
-        className="MenuGrid"
+        <Paper>
+        <GridContainer
         container
         wrap="nowrap"
         direction="row"
-        sx={{
-            mx: "auto",
-            width: 325,
-            minHeight: "40px",
-            position: "sticky"
-            }}
+
         >
                 {itemsMenu.map(item => (
                 <ListItem
                 key={item}
                 >
-                    <Link
-                    className="MenuLink" 
+                    <CustomLink
                     underline="none"
-                    /*sx={{
-                    color: 'white',
-                    fontFamily:  'Gill Sans'
-                    }}*/
                     href={item.to}
                     >
                     {item.name}
-                    </Link>
+                    </CustomLink>
                    
                 </ListItem>
                     
             ))}  
-        </Grid>
-        </Grid>
+        </GridContainer>
+        </Paper>
     );
 
 }
