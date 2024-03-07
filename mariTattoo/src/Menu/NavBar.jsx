@@ -1,5 +1,5 @@
-import { ListItem } from "@mui/material"
-import {Paper, CustomLink, GridContainer} from "/src/Menu/NavBar.style.js"
+//import { ListItem } from "@mui/material"
+import {CustomLink, GridContainer, CustomList} from "/src/Menu/NavBar.style.js"
 
 export const NavBar = () => {
 
@@ -19,7 +19,6 @@ export const NavBar = () => {
     ]
 
     return (
-        <Paper>
         <GridContainer
         container
         wrap="nowrap"
@@ -27,8 +26,8 @@ export const NavBar = () => {
 
         >
                 {itemsMenu.map(item => (
-                <ListItem
-                key={item}
+                <CustomList
+                key={item.name}
                 >
                     <CustomLink
                     underline="none"
@@ -37,11 +36,10 @@ export const NavBar = () => {
                     {item.name}
                     </CustomLink>
                    
-                </ListItem>
+                </CustomList>
                     
             ))}  
         </GridContainer>
-        </Paper>
     );
 
 }
