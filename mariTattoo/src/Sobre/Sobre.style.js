@@ -1,4 +1,6 @@
-import { Box, Typography, CardMedia, styled } from "@mui/material";
+import { Grid, Box, Typography, CardMedia, styled } from "@mui/material";
+
+export const TopGrid = styled(Grid)({});
 
 export const SeparateCover = styled(Box)({
   height: "4px",
@@ -7,16 +9,18 @@ export const SeparateCover = styled(Box)({
 });
 
 export const TitleArtista = styled(Typography)({
-  marginTop: "12px",
-  marginBottom: "12px",
-  marginLeft: "15px",
+  marginTop: "20px",
+  marginBottom: "20px",
+  marginLeft: "20px",
   fontFamily: "Gill Sans",
   fontSize: "30px",
   fontWeight: "lighter",
 });
 
 export const FotoArt = styled(CardMedia)({
-  marginLeft: "15px",
+  marginLeft: "-200px",
+  marginTop: "75px",
+  alignSelf: "center",
   width: "25%",
 });
 
@@ -24,7 +28,6 @@ export const BioText = styled(Typography)({
   fontFamily: "Gill Sans",
   fontSize: "23px",
   fontWeight: "lighter",
-  textAlign: "center",
-  marginLeft: "120px",
-  marginTop: "-150px",
+  marginTop: "90px",
+  marginLeft: "10px",
 });

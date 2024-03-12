@@ -1,13 +1,16 @@
-import { Card } from "@mui/material"
-import { SeparateCover, TitleArtista, FotoArt, BioText } from "./Sobre.style"
+//import { responsiveFontSizes } from "@mui/material"
+import { TopGrid, SeparateCover, TitleArtista, FotoArt, BioText } from "./Sobre.style"
 
 export const Sobre = () => {
     return (
         <div id="sobre">
+            
             <SeparateCover
             component="section" />
             
-            <Card>
+            <TopGrid
+            container
+            >
             <TitleArtista 
             variant="h3">
                 Conheça a Artista
@@ -24,7 +27,7 @@ export const Sobre = () => {
                     variant="body1">
                     Insira uma bio muito massa aqui!
                 </BioText>
-            </Card>
+            </TopGrid>
         </div>
     );
 }
