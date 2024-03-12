@@ -1,5 +1,6 @@
 import { NavBar } from './Menu/NavBar'
 import { BgCover } from './Cover/BgCover'
+import { Sobre } from "./Sobre/Sobre"
 import "/App.css"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
      <NavBar />
      <BgCover />
+     <Sobre />
     </>
   )
 }
