@@ -11,7 +11,7 @@ export const SeparateCover = styled(Box)({
 export const TitleArtista = styled(Typography)({
   marginTop: "20px",
   marginBottom: "20px",
-  marginLeft: "20px",
+  marginLeft: "24px",
   fontFamily: "Gill Sans",
   fontSize: "30px",
   fontWeight: "lighter",

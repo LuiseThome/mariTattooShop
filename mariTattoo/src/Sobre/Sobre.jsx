@@ -1,4 +1,3 @@
-//import { responsiveFontSizes } from "@mui/material"
 import { TopGrid, SeparateCover, TitleArtista, FotoArt, BioText } from "./Sobre.style"
 
 export const Sobre = () => {
@@ -8,13 +7,12 @@ export const Sobre = () => {
             <SeparateCover
             component="section" />
             
-            <TopGrid
-            container
-            >
-            <TitleArtista 
-            variant="h3">
+            <TopGrid container>
+
+                 <TitleArtista 
+                variant="h3">
                 Conheça a Artista
-            </TitleArtista>
+                </TitleArtista>
 
            
                 <FotoArt
@@ -26,7 +24,8 @@ export const Sobre = () => {
                  <BioText
                     variant="body1">
                     Insira uma bio muito massa aqui!
-                </BioText>
+                </BioText>   
+            
             </TopGrid>
         </div>
     );
