@@ -1,11 +1,15 @@
-import { TopGrid, SeparateCover, TitleArtista, FotoArt, BioText } from "./Sobre.style"
+import { TopGrid, SeparateCover, TypeSection, TitleArtista, FotoArt, BioText } from "./Sobre.style"
 
 export const Sobre = () => {
     return (
         <div id="sobre">
             
             <SeparateCover
-            component="section" />
+            component="section">
+                <TypeSection>
+                    SOBRE
+                </TypeSection>
+            </SeparateCover>
             
             <TopGrid container>
 

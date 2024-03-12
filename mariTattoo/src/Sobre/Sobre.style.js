@@ -3,9 +3,18 @@ import { Grid, Box, Typography, CardMedia, styled } from "@mui/material";
 export const TopGrid = styled(Grid)({});
 
 export const SeparateCover = styled(Box)({
-  height: "4px",
+  height: "37px",
   width: "275px",
   backgroundColor: "#FF5757",
+});
+
+export const TypeSection = styled(Typography)({
+  fontFamily: "Gill Sans",
+  fontWeight: "lighter",
+  color: "whitesmoke",
+  textAlign: "center",
+  marginLeft: "190px",
+  fontSize: "22px",
 });
 
 export const TitleArtista = styled(Typography)({
