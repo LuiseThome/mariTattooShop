@@ -18,7 +18,7 @@ export const TypeSection = styled(Typography)({
 });
 
 export const TitleArtista = styled(Typography)({
-  marginTop: "20px",
+  marginTop: "25px",
   marginBottom: "20px",
   marginLeft: "33px",
   fontFamily: "Gill Sans",
@@ -31,6 +31,7 @@ export const FotoArt = styled(CardMedia)({
   marginTop: "75px",
   alignSelf: "center",
   width: "25%",
+  marginBottom: "30px",
 });
 
 export const BioText = styled(Typography)({
