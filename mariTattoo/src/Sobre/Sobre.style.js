@@ -12,17 +12,17 @@ export const TypeSection = styled(Typography)({
   fontFamily: "Gill Sans",
   fontWeight: "lighter",
   color: "whitesmoke",
-  textAlign: "center",
-  marginLeft: "190px",
-  fontSize: "22px",
+  textAlign: "left",
+  marginLeft: "24px",
+  fontSize: "20px",
 });
 
 export const TitleArtista = styled(Typography)({
   marginTop: "20px",
   marginBottom: "20px",
-  marginLeft: "24px",
+  marginLeft: "33px",
   fontFamily: "Gill Sans",
-  fontSize: "30px",
+  fontSize: "27px",
   fontWeight: "lighter",
 });
 

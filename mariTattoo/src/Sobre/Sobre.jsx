@@ -21,7 +21,7 @@ export const Sobre = () => {
            
                 <FotoArt
                 component="img"
-                image="Public/add-image.png"
+                src="Public/add-image.png"
                 alt="Foto Mari"
                 />
             
