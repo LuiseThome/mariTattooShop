@@ -13,8 +13,12 @@ export const NavBar = () => {
             name: "ORÇAMENTO"
         },
         {
-            to: "#agenda",
-            name: "AGENDA"
+            to: "#contato",
+            name: "CONTATO"
+        },
+        {
+            to: "#cartao",
+            name: "CARTÃO PRESENTE"
         }
     ]
 
