@@ -15,6 +15,6 @@ export const CustomList = styled(ListItem)({
 export const CustomLink = styled(Link)({
   color: "white",
   fontFamily: "Gill Sans",
-  fontSize: "17px",
+  fontSize: "16px",
   fontWeight: "lighter",
 });
