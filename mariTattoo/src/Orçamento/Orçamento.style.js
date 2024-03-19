@@ -1,13 +1,4 @@
-import {
-  styled,
-  Box,
-  Typography,
-  Grid,
-  InputLabel,
-  MenuItem,
-  FormControl,
-  Select,
-} from "@mui/material";
+import { styled, Box, Typography, FormControl } from "@mui/material";
 
 export const SeparateAbout = styled(Box)({
   height: "37px",
@@ -31,4 +22,14 @@ export const TypeTitle = styled(Typography)({
   fontFamily: "Gill Sans",
   fontSize: "27px",
   fontWeight: "lighter",
+});
+
+export const SelBox = styled(Box)({
+  minWidth: 120,
+});
+
+export const Control = styled(FormControl)({
+  minWidth: 220,
+  marginTop: "25px",
+  marginLeft: "100px",
 });
