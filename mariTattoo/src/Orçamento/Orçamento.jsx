@@ -33,7 +33,7 @@ export const Orçamento = () => {
         }
     ]
 
-    const [chose, setChose] = useState("");
+    const [chose, setChose] = useState("Teste!");
 
    const handleChange = (event) => {
     const isSelected = Number(event.target.value);
@@ -67,7 +67,7 @@ export const Orçamento = () => {
                     <Select
                     labelId="options-outlined-label"
                     id="options-outlined"
-                    value={options.id}
+                    value={chose}
                     label="Estilo de Tatuagem"
                     onChange={handleChange}
                     >
@@ -79,9 +79,9 @@ export const Orçamento = () => {
                             </MenuItem>
                         })}
                     </Select>
-                    <p>{chose}</p>
+                    
                 </Control>
-                
+                <p>{chose}</p>
                 </SelBox>
            
            
