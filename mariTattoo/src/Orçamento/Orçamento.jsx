@@ -15,7 +15,7 @@ export const Orçamento = () => {
         {
             label: "Cobertura",
             id: 3,
-        }
+        },
     ];
 
     const data = [
@@ -24,24 +24,17 @@ export const Orçamento = () => {
             id: 1
         },
         {
-            label: "Arte exclusiva, criada de forma única para você",
+            label: "Arte única criada especialmente para você",
             id: 2
         },
         {
             label: "Cobertura de tatuagens antigas ou cicatrizes",
             id: 3
-        }
-    ]
+        },
+    ];
 
     const [chose, setChose] = useState("Teste!");
 
-   const handleChange = (event) => {
-    const isSelected = Number(event.target.value);
-    
-    data.find((item) => {
-        item.id === isSelected ? setChose(item.label) : undefined;
-    })
-}
 
     return (
         <div id="orçamento">
@@ -60,21 +53,22 @@ export const Orçamento = () => {
             </Grid>
             <SelBox>
                 <Control>
-                    <StyleLabel id="options-outlined-label"
+                    <StyleLabel id="demo-simple-select-label"
                     >
                         Estilo de Tatuagem
                     </StyleLabel>
                     <Select
-                    labelId="options-outlined-label"
-                    id="options-outlined"
-                    value={chose}
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={options.label}
                     label="Estilo de Tatuagem"
                     onChange={handleChange}
                     >
                         {options.map((option, key) => {
                             <MenuItem
+                            key={key}
                             value={option.id}
-                            key={key}>
+                            >
                                 {option.label}
                             </MenuItem>
                         })}
@@ -87,5 +81,13 @@ export const Orçamento = () => {
            
         </div>
 
-    )
+    );
+
+    function handleChange (event) {
+        const selectedItem = Number(event.target.value);
+
+        data.find((item) => {
+            item.id === selectedItem ? setChose(item.label) : undefined;
+        })
+    }
 }
