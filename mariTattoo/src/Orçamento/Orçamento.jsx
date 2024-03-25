@@ -1,4 +1,4 @@
-import { Grid, MenuItem, Select } from "@mui/material";
+import { Grid, MenuItem, Select, Card, CardHeader, CardMedia, CardContent } from "@mui/material";
 import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel, StyleType } from './Orçamento.style';
 import { useState } from "react"
 
@@ -110,9 +110,19 @@ export const Orçamento = () => {
                     </Select>
                     
                 </Control>
-                <StyleType>{showTitle}</StyleType>
-                <StyleType>{chose}</StyleType>
-                <img src={showPic}></img>
+                <Card>
+                    <CardHeader
+                   title={showTitle}></CardHeader>
+                   <CardMedia
+                   component="img"
+                   image={showPic}
+                   ></CardMedia>
+                   <CardContent>
+                    <StyleType>{chose}</StyleType>
+                </CardContent>
+                
+                </Card>
+                
                 </SelBox>
            
            
