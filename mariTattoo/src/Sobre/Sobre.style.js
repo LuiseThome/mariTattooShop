@@ -15,6 +15,7 @@ export const TypeSection = styled(Typography)({
   textAlign: "left",
   marginLeft: "24px",
   fontSize: "20px",
+  width: "fit-content",
 });
 
 export const TitleArtista = styled(Typography)({
