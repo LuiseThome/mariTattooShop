@@ -1,5 +1,5 @@
-import { Grid, MenuItem, Select, Card, CardHeader, CardMedia, CardContent } from "@mui/material";
-import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel, StyleType } from './Orçamento.style';
+import { Grid, MenuItem, Select, Card, CardHeader, CardMedia, Typography } from "@mui/material";
+import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel, TypeNotice, StyleType, StyleCard } from './Orçamento.style';
 import { useState } from "react"
 
 export const Orçamento = () => {
@@ -50,15 +50,15 @@ export const Orçamento = () => {
 
     const picture = [
         {
-            imgFile: "Public/fine line.jpeg",
+            imgFile: "Public/fine line copy.png",
             id: 1
         },
         {
-            imgFile: "Public/exclusive.jpeg",
+            imgFile: "Public/exclusive copy.jpeg",
             id: 2
         },
         {
-            imgFile: "Public/cover.png",
+            imgFile: "Public/cover copy.png",
             id: 3
         }
     ];
@@ -75,19 +75,23 @@ export const Orçamento = () => {
                 <TypeOrca>
                     ORÇAMENTO
                 </TypeOrca>
-
             </SeparateAbout>
 
             <Grid container>
                 <TypeTitle variant="h3">
                     Transforme a sua história em Arte!
                 </TypeTitle>
+                </Grid>
+                <Grid container>
+                <TypeNotice>
+                    *Para um orçamento assertivo, favor especificar a arte em detalhes através da página de contato
+                </TypeNotice>
           
             </Grid>
+
             <SelBox>
                 <Control>
-                    <StyleLabel id="demo-simple-select-label"
-                    >
+                    <StyleLabel id="demo-simple-select-label">
                         Estilo de Tatuagem
                     </StyleLabel>
                     <Select
@@ -108,20 +112,17 @@ export const Orçamento = () => {
                             );
                         })}
                     </Select>
-                    
                 </Control>
-                <Card>
+
+                <StyleCard>
                     <CardHeader
-                   title={showTitle}></CardHeader>
+                   title={showTitle}
+                   subheader={chose}></CardHeader>
                    <CardMedia
                    component="img"
                    image={showPic}
                    ></CardMedia>
-                   <CardContent>
-                    <StyleType>{chose}</StyleType>
-                </CardContent>
-                
-                </Card>
+                </StyleCard>
                 
                 </SelBox>
            

@@ -4,6 +4,7 @@ import {
   Typography,
   FormControl,
   InputLabel,
+  Card,
 } from "@mui/material";
 
 export const SeparateAbout = styled(Box)({
@@ -30,6 +31,16 @@ export const TypeTitle = styled(Typography)({
   fontWeight: "lighter",
 });
 
+export const TypeNotice = styled(Typography)({
+  fontFamily: "Gill Sans",
+  fontWeight: "lighter",
+  fontSize: "15px",
+  textAlign: "center",
+  color: "#FF5757",
+  marginBottom: "20px",
+  marginLeft: "33px",
+});
+
 export const SelBox = styled(Box)({
   minWidth: 120,
 });
@@ -53,4 +64,9 @@ export const StyleType = styled(Typography)({
   marginTop: "25px",
   marginBottom: "25px",
   textAlign: "center",
+});
+
+export const StyleCard = styled(Card)({
+  maxWidth: 345,
+  marginLeft: 250,
 });
