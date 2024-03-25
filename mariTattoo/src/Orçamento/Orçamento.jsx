@@ -1,7 +1,6 @@
 import { Grid, MenuItem, Select } from "@mui/material";
 import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel, StyleType } from './Orçamento.style';
 import { useState } from "react"
-import "/Public/cover.png";
 
 export const Orçamento = () => {
     const options = [
@@ -22,7 +21,6 @@ export const Orçamento = () => {
     const data = [
         {
             label: "Tatuagem feita em linhas finas e delicadas - a partir de R$500,00",
-            imgFile: "/Public/cover.png",
             id: 1
         },
         {
@@ -49,6 +47,21 @@ export const Orçamento = () => {
             id: 3
         },
     ]
+
+    const picture = [
+        {
+            imgFile: "Public/fine line.jpeg",
+            id: 1
+        },
+        {
+            imgFile: "Public/exclusive.jpeg",
+            id: 2
+        },
+        {
+            imgFile: "Public/cover.png",
+            id: 3
+        }
+    ];
 
     const [chose, setChose] = useState("");
 
@@ -99,7 +112,7 @@ export const Orçamento = () => {
                 </Control>
                 <StyleType>{showTitle}</StyleType>
                 <StyleType>{chose}</StyleType>
-                <img>{showPic}</img>
+                <img src={showPic}></img>
                 </SelBox>
            
            
@@ -114,12 +127,12 @@ export const Orçamento = () => {
             item.id === selectedItem ? setChose(item.label) : undefined;
         });
 
-        data.find((pic) => {
-            pic.id === selectedItem ? setShowPic(pic.img) : undefined;
-        })
-
         title.find((name) => {
             name.id === selectedItem ? setShowTitle(name.label) : undefined;
+        })
+
+        picture.find((pic) => {
+            pic.id === selectedItem ? setShowPic(pic.imgFile) : undefined;
         })
     }
 }
