@@ -1,6 +1,7 @@
 import { Grid, MenuItem, Select } from "@mui/material";
-import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel } from './Orçamento.style';
+import { SeparateAbout, TypeOrca, TypeTitle, SelBox, Control, StyleLabel, StyleType } from './Orçamento.style';
 import { useState } from "react"
+import "/Public/cover.png";
 
 export const Orçamento = () => {
     const options = [
@@ -20,21 +21,40 @@ export const Orçamento = () => {
 
     const data = [
         {
-            label: "Tatuagem feita em linhas finas e delicadas",
+            label: "Tatuagem feita em linhas finas e delicadas - a partir de R$500,00",
+            imgFile: "/Public/cover.png",
             id: 1
         },
         {
-            label: "Arte única criada especialmente para você",
+            label: "Arte única criada especialmente para você - a partir de R$350,00",
             id: 2
         },
         {
-            label: "Cobertura de tatuagens antigas ou cicatrizes",
+            label: "Cobertura de tatuagens antigas ou cicatrizes - a partir de R$450,00",
             id: 3
         },
     ];
 
-    const [chose, setChose] = useState("Teste!");
+    const title = [
+        {
+            label: "Fine Line",
+            id: 1
+        },
+        {
+            label: "Arte Exclusiva",
+            id: 2
+        },
+        {
+            label: "Cobertura",
+            id: 3
+        },
+    ]
 
+    const [chose, setChose] = useState("");
+
+    const [showTitle, setShowTitle] = useState("")
+
+    const [showPic, setShowPic] = useState()
 
     return (
         <div id="orçamento">
@@ -65,17 +85,21 @@ export const Orçamento = () => {
                     onChange={handleChange}
                     >
                         {options.map((option, key) => {
-                            <MenuItem
+                            return (
+                                <MenuItem
                             key={key}
                             value={option.id}
                             >
                                 {option.label}
                             </MenuItem>
+                            );
                         })}
                     </Select>
                     
                 </Control>
-                <p>{chose}</p>
+                <StyleType>{showTitle}</StyleType>
+                <StyleType>{chose}</StyleType>
+                <img>{showPic}</img>
                 </SelBox>
            
            
@@ -88,6 +112,14 @@ export const Orçamento = () => {
 
         data.find((item) => {
             item.id === selectedItem ? setChose(item.label) : undefined;
+        });
+
+        data.find((pic) => {
+            pic.id === selectedItem ? setShowPic(pic.img) : undefined;
+        })
+
+        title.find((name) => {
+            name.id === selectedItem ? setShowTitle(name.label) : undefined;
         })
     }
 }

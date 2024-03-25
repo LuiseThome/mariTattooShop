@@ -45,3 +45,12 @@ export const StyleLabel = styled(InputLabel)({
   fontWeight: "lighter",
   fontSize: "19px",
 });
+
+export const StyleType = styled(Typography)({
+  fontFamily: "Gill Sans",
+  fontWeight: "lighter",
+  fontSize: "19px",
+  marginTop: "25px",
+  marginBottom: "25px",
+  textAlign: "center",
+});
