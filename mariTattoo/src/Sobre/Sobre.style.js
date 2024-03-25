@@ -1,6 +1,4 @@
-import { Grid, Box, Typography, CardMedia, styled } from "@mui/material";
-
-export const TopGrid = styled(Grid)({});
+import { Box, Typography, CardMedia, styled } from "@mui/material";
 
 export const SeparateCover = styled(Box)({
   height: "37px",
