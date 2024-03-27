@@ -5,6 +5,10 @@ import { useState } from "react"
 export const Orçamento = () => {
     const options = [
         {
+            label: "Escolha uma opção",
+            id: 0
+        },
+        {
             label: "Fine Line",
             id: 1,
         },
@@ -20,11 +24,15 @@ export const Orçamento = () => {
 
     const data = [
         {
+            label: "",
+            id: 0
+        },
+        {
             label: "Tatuagem feita em linhas finas e delicadas - a partir de R$500,00",
             id: 1
         },
         {
-            label: "Arte única criada especialmente para você - a partir de R$350,00",
+            label: "Desenho autoral criado especialmente para você - a partir de R$550,00",
             id: 2
         },
         {
@@ -35,30 +43,38 @@ export const Orçamento = () => {
 
     const title = [
         {
-            label: "Fine Line",
+            label: "",
+            id: 0
+        },
+        {
+            label: "FINE LINE",
             id: 1
         },
         {
-            label: "Arte Exclusiva",
+            label: "ARTE EXCLUSIVA",
             id: 2
         },
         {
-            label: "Cobertura",
+            label: "COBERTURA",
             id: 3
         },
     ]
 
     const picture = [
         {
-            imgFile: "Public/fine line copy.png",
+            imgFile: "",
+            id: 0
+        },
+        {
+            imgFile: "Public/fineline.jpg",
             id: 1
         },
         {
-            imgFile: "Public/exclusive copy.jpeg",
+            imgFile: "Public/exclusive.jpeg",
             id: 2
         },
         {
-            imgFile: "Public/cover copy.png",
+            imgFile: "Public/Cobertura.png",
             id: 3
         }
     ];

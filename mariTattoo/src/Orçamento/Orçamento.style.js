@@ -67,6 +67,8 @@ export const StyleType = styled(Typography)({
 });
 
 export const StyleCard = styled(Card)({
-  maxWidth: 345,
-  marginLeft: 250,
+  maxWidth: 450,
+  marginLeft: 45,
+  marginTop: 15,
+  marginBottom: 25,
 });
